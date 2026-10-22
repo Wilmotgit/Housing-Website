@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB \"npm run backend\" \"npm --prefix vite-project run dev\"",
+    "backend": "node server/index.js",
+    "build": "npm --prefix vite-project run build",
+    "lint": "npm --prefix vite-project run lint",
+    "preview": "npm --prefix vite-project run preview"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
